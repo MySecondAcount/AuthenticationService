@@ -1,5 +1,5 @@
 FROM openjdk:11
 WORKDIR /app
-COPY target/AuthenticationService.jar /app
+COPY target/AuthenticationService-0.0.1-SNAPSHOT.jar /app
 EXPOSE 8080
-CMD ["java", "-jar", "/app/AuthenticationService.jar"]
+CMD ["java", "-jar", "/app/AuthenticationService-0.0.1-SNAPSHOT.jar"]
