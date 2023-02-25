@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.*;
 public class AuthenticationServiceController {
     @PostMapping("/login")
     public boolean authenticate(@RequestBody UserInfo userInfo) {
-
-
         if (userInfo.getEmail().equals("admin1@gmail.com") && userInfo.getPassword().equals("123456")) {
             return true;
         } else {
